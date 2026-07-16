@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="titulo_principal">
+        <h1>O senhor dos anéis</h1>
+        <h2>Uma das trilogias mais famosas do cinema pneumoultramicroscopicossilicovu<wbr>lcanoconiótico</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sinopse.html">Sinopse</a>
+            <a href="imagemfilme.html">Imagem do filme</a>
+            <a href="personagens.html">Personagens principais</a>
+            <a href="informacoes.html">Informações</a>
+            <a href="ordem.html">Ordem dos filmes</a>
+            <a href="curiosidades.html">Curiosidades</a>
+            <a href="impacto.html">Impacto Cultural</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </div>
+    <h2 class="titulo_secundario">Entre em contato:</h2>
+    <form action="processa.php" method="get" autocomplete="off">
+        <label for="nomepessoa">Nome:</label>
+        <input type="text" value="MEU NOME" readonly name="nomepessoa" id="nomepessoa" minlength="3" maxlength="15"  placeholder="Informe seu nome"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="E-mail"><br><br>
+
+        <label for="ano">Ano de nascimento:</label>
+        <input type="number" id="ano" name="ano" max="2026" min="1900" placeholder="Informe ano de nascimento"><br><br>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone" id="telefone" placeholder="Informe seu telefone"><br><br>
+
+        <label for="github">Infome seu github:</label>
+        <input type="url" name="github" id="github" placeholder="Informe seu github"><br><br>
+
+        <label for="senha">Infome sua senha:</label>
+        <input type="password" id="senha" name="senha"><br><br>
+
+        <label for="arquivo">Anexe um arquivo:</label>
+        <input type="file" id="arquivo" name="arquivo"><br><br>
+
+        <label for="cor">Escolha uma cor:</label>
+        <input type="color" id="cor" name="cor"><br><br>
+
+        <fieldset>
+            <legend>Campos de tempo</legend>
+            <label for="data">Informe a data</label>
+            <input type="date" name="data" id="data"><br><br>
+
+            <label for="mes">Informe o mes</label>
+            <input type="month" name="mes" id="mes"><br><br>
+
+            <label for="semana">Informe a semana</label>
+            <input type="week" name="semana" id="semana"><br><br>
+
+            <label for="hora">Informe a hora:</label>
+            <input type="time" name="hora" id="hora"><br><br>
+
+            <label for="datahora">Data e hora atual</label>
+            <input type="datetime-local" name="datahora" id="datahora"><br><br>
+        </fieldset>
+
+        <label for="pesquisa">Pesquisa</label>
+        <input type="search" id="pesquisa" name="pesquisa"><br><br>
+
+        <label for="descricao">Infome aqui o que voce gosta nos filmes:</label><br>
+        <textarea cols="30" rows="10" name="descricao" id="descricao"></textarea><br><br>
+
+        <fieldset>
+            <legend>Qual seu filme favorito?</legend>
+            <label for="filme1"><input type="radio" name="filme" id="filme1" value="Filme 1">Filme 1</label>
+
+            <label for="filme2"><input checked type="radio" name="filme" id="filme2" value="Filme 2">Filme 2</label>
+            
+            <label for="filme3"><input type="radio" name="filme" id="filme3" value="Filme 3">Filme 3</label>
+        </fieldset><br><br>
+
+        <label for="nivel">Escolha o nível</label>
+        <input type="range" max="10" min="1" id="nivel" name="nivel">
+
+        <select id="lista_suspensa" name="lista">
+            <optgroup label="Teste de legenda no combobox">
+                <option value="Teste 1">Teste 1</option>
+                <option value="Teste 2">Teste 2</option>
+                <option value="Teste 3">Teste 3</option>
+            </optgroup>
+            <optgroup label="Teste de legenda no combobox 2">
+                <option value="Teste 4">Teste 4</option>
+                <option value="Teste 5">Teste 5</option>
+                <option value="Teste 6">Teste 6</option>
+            </optgroup>
+        </select><br><br>
+
+        <fieldset>
+            <legend>Desenvolvimento para internet</legend>
+            <label><input type="checkbox" name="php" value="php">PHP</label>
+            <label><input type="checkbox" name="html5" value="html5">HTML5</label>
+            <label><input type="checkbox" name="css" value="css">CSS</label>
+            <label><input type="checkbox" name="js" value="js">JAVASCRIPT</label>
+        </fieldset><br><br>
+
+        <!-- Datalist possíveis ganhadores da copa do mundo 26-->
+        <input type="text" id="busca_datalist" list="paises">
+        <datalist id="paises">
+            <option>Brasil</option>
+            <option>França</option>
+            <option>Argentina</option>
+            <option>Alemanha</option>
+            <option>Inglaterra</option>
+            <option>Espanha</option>
+        </datalist><br><br>
+
+        <audio controls muted autoplay loop>
+            <source src="audio/musica.mp3" type="audio/mp3">
+            Navegador não é compatível para executar áudio!
+        </audio><br><br>
+
+        <video controls autoplay loop poster=""> <!--Imagem de capa do vídeo-->
+            <source src="videos/videoteste.mp4" type="video/mp4">
+        </video><br><br>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mk1gcdv27ro?si=v9T06itgBGg4dYd3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d28937.58269895579!2d-53.487206413237935!3d-24.95938276663795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sunipar!5e0!3m2!1spt-BR!2sbr!4v1774307411663!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+
+    </form>
+</body>
+</html>
