@@ -25,3 +25,112 @@ body{
 #layout{
      display: flex;
 }
+
+
+/*Parte 1 */
+
+#estilo_lista_ul{
+    list-style-type: disc /*circle, none, square*/;
+}
+
+#estilo_lista_ol{
+    /*list-style-type: decimal-leading-zero; /*decimal - decimal-leading-zero - lower-roman - upper-roman - lower-greek - lower-alpha - upper-alpha*/
+    list-style-image: url('img/seta_direita_vermelha.png')
+}
+
+li{
+    list-style-position: outside; /*inside e outside*/
+    border: dotted 2px #4F7942;
+}
+
+/*Parte 2*/
+
+#curiosidades{
+    background-color: white;
+    border: solid 3px #4F7942;
+    color: black;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-delay: 3s;
+    transition-timing-function: linear; /*ease-out, ease-in, ease-in-out - linear, ease*/
+}
+
+
+#curiosidades:hover{
+    background-color: black;
+    color: white;
+    border: solid 3px red;
+}
+
+/*Parte 3*/
+
+#impacto_cultural{
+    background-image: url(img/senhordosaneis_fundo.jpg);
+    background-repeat: no-repeat; /*no-repeat, repeat, repeat-y, repeat-x;*/
+    background-size: cover; /*contain, px, %*/
+    background-attachment: fixed; /*scroll*/
+}
+
+/*Parte 4*/
+
+#pai{
+  width: 400px;
+  height: 300px;  
+  background-color: gray;
+}
+
+#filho{
+    position: absolute;
+    background-color: white;
+    color: black; 
+    top: 0px;
+    width: 400px;
+    height: 300px;  
+    left: 300px;
+}
+
+#irmao{
+    position: static;
+    background-color: red;
+    color: white; 
+    top: 0px;
+    width: 400px;
+    height: 300px;  
+    left: 300px;
+}
+
+/*Parte 5*/
+
+h1{
+    animation-name: multicolor;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards; /*forwards - backwards*/
+    animation-iteration-count: infinite; /*Quantidade de animações vezes/infinite */
+}
+
+@keyframes multicolor{
+    from{
+        color: gold;
+    }
+    to{
+        color: blue;
+    } 
+}
+
+.animacao img{
+    animation: foguete;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes foguete{
+    0%{margin-left: 0%}
+    25%{
+        margin-left: 80%; 
+        transform: rotate(0deg)
+    }
+    50%{margin-left: 80%; transform: rotate(-120deg)}
+    75%{margin-left: 0%; transform: rotate(-120deg)}
+    100%{margin-left: 0%; transform: rotate(0deg)}
+} 
