@@ -1,5 +1,3 @@
-
-
 #titulo_principal {
     background-color: #8B6F1E;
     color: white;
@@ -8,10 +6,6 @@
 .titulo_secundario {
     background-color: #2F4F2F;
     color: white;
-}
-
-.rodape{
-    text-align: center;
 }
 
 body{
@@ -24,4 +18,8 @@ body{
 
 #layout{
      display: flex;
+}
+
+.rodape{
+    text-align: center;
 }
